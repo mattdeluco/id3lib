@@ -81,7 +81,7 @@ AC_DEFUN(ID3_CXX_PORTABILITY,[
 
   dnl Check whether we have bool
   AC_MSG_CHECKING(whether C++ has bool)
-  AC_TRY_RUN([main() { bool b1=true; bool b2=false; }],
+  AC_TRY_RUN([int main() { bool b1=true; bool b2=false; return 0; }],
              [ AC_MSG_RESULT(yes) ],
              [ AC_MSG_RESULT(no)
                AC_DEFINE(CXX_HAS_NO_BOOL) ],

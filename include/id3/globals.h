@@ -82,13 +82,13 @@
 
 #define ID3_C_VAR extern
 
-#ifndef __cplusplus
+#if !defined(__cplusplus) && !defined(__bool_true_false_are_defined)
 
 typedef int bool;
 #  define false (0)
 #  define true (!false)
 
-#endif /* __cplusplus */
+#endif /* __cplusplus __bool_true_false_are_defined */
 
 ID3_C_VAR const char * const ID3LIB_NAME;
 ID3_C_VAR const char * const ID3LIB_RELEASE;

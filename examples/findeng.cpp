@@ -9,7 +9,7 @@
 using std::cout;
 using std::endl;
 
-int main(unsigned argc, char* argv[])
+int main(int argc, char* argv[])
 {
   ID3D_INIT_DOUT();
   ID3D_INIT_WARNING();
